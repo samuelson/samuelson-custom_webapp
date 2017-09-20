@@ -1,10 +1,10 @@
 {
   "name": "samuelson-custom_webapp",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "author": "Josh Samuelson",
   "summary": "Example module for Learning Puppet",
   "license": "Apache-2.0",
-  "source": "https://github.com/samuelson/custom_webapp",
+  "source": "https://github.com/samuelson/samuelson-custom_webapp",
   "dependencies": [
     {
       "name": "puppetlabs-stdlib",
