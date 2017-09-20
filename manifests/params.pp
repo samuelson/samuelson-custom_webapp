@@ -10,5 +10,5 @@ class custom_webapp::params {
   $db_username = 'root'
   $db_password = 'password'
   $appserver_port = '8080'
-  $webserver_port = '80'
+  $webserver_port = 80
 }
