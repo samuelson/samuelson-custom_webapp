@@ -1,6 +1,6 @@
 {
   "name": "samuelson-custom_webapp",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "author": "Josh Samuelson",
   "summary": "Example module for Learning Puppet",
   "license": "Apache-2.0",

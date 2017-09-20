@@ -51,7 +51,7 @@ class custom_webapp::db (
   # the exec to only trigger if it's receieved a "notify" event from another
   # resource.
   exec { 'setup database':
-    cmd         => 'mysql -uroot -ppassword pages < /etc/custom_webapp/starter.sql',
+    command     => 'mysql -uroot -ppassword pages < /etc/custom_webapp/starter.sql',
     path        => '/usr/bin/',
     refreshonly => true,
   }
