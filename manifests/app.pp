@@ -17,9 +17,15 @@ class custom_webapp::app (
   # yum repositories or from a url. It's actually bad practice 
   # to include a file like this inside a module, but we're doing
   # it for convenience here.
+  file {'/tmp/custom_webapp-0.1.0-1.x86_64.rpm':
+    ensure => file,
+    source => 'puppet:///modules/custom_webapp/custom_webapp-0.1.0-1.x86_64.rpm',
+    before => Package['custom_webapp'],
+  }
   package {'custom_webapp':
     ensure => present,
-    source => 'puppet:///modules/custom_webapp/custom_webapp-0.1.0-1.x86_64.rpm',
+    provider => 'rpm',
+    source => '/tmp/custom_webapp-0.1.0-1.x86_64.rpm',
   }
 
   # This file resource uses an epp template, which is a Puppet
