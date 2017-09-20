@@ -1,0 +1,5 @@
+---
+db: "<%= $db_url %>"
+port: "<%= $web_port %>"
+username: "<%= $db_username %>"
+password: "<%= $db_password %>"
